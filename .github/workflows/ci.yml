@@ -27,7 +27,7 @@ jobs:
     continue-on-error: ${{ matrix.experimental }}
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Install libxslt and libxml2
         run: sudo apt-get install libxslt-dev libxml2-dev
       - name: Set up Ruby ${{ matrix.ruby-version }}
